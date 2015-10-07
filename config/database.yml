@@ -1,0 +1,20 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  username: root
+  password: Aspera123_
+  pool: 5
+
+development:
+  <<: *default
+  database: angular_app_development
+
+test:
+  <<: *default
+  database: angular_app_test
+
+production:
+  <<: *default
+  database: angular_app_production
+  username: angular_app
+  password: <%= ENV['ANGULAR_APP_DATABASE_PASSWORD'] %>
