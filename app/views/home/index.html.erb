@@ -1,0 +1,16 @@
+<div ng-app="angularApp">
+  <div ng-controller="WelcomeController">
+    <div class="left" ng-show="name && inputDisabled">
+      <h1 ng-dblclick="revealInput()">{{ greet(name) }}</h1>
+    </div>
+    <div class="left" ng-show="!name || !inputDisabled">
+      <h1>Please enter your name: </h1>
+      <input ng-class="{ 'valid': name, 'invalid': !name }"
+             type="text"
+             placeholder="Enter your name"
+             autofocus
+             ng-model="name">
+      <button type='submit' ng-click="removeInput()">Enter</button>
+    </div>
+  </div>
+</div>
