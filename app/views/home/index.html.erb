@@ -1,4 +1,4 @@
-<div ng-app="angularApp">
+<div class="body" ng-app="angularApp">
   <div ng-controller="WelcomeController">
     <div class="left" ng-show="name && inputDisabled">
       <h1 ng-dblclick="revealInput()">{{ greet(name) }}</h1>
@@ -10,7 +10,7 @@
              placeholder="Enter your name"
              autofocus
              ng-model="name">
-      <button type='submit' ng-click="removeInput()">Enter</button>
+      <button ng-click="removeInput()">Enter</button>
     </div>
   </div>
 </div>
