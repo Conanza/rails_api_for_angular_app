@@ -1,0 +1,10 @@
+%h1 API Docs
+%h2 V1
+%h3 Resources:
+%ul
+  %li
+    names { attributes: name, id, date_created, date_modified }
+    %ul
+      %li index: GET /v1/names
+      %li create: POST /v1/names { name: name }
+      %li destroy: DELETE /v1/names/:id
