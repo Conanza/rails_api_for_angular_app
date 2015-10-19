@@ -25,10 +25,12 @@ class V1::NamesController < ApplicationController
   def destroy
     id = params[:id].to_i
     render status: :bad_request if !id
-    @name = Name.find(id)
-    if @name
-      @name.destroy(id)
-      render json: id, status: :success
+    if @name = Name.find_by(id: id) # using `find_by` because it fails more gracefully than `find`
+      if @name.destroy
+        render json: @name, status: :accepted
+      else
+        render status: :internal_server_error
+      end
     else
       render status: :not_found
     end

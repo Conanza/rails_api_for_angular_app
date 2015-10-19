@@ -33,9 +33,12 @@ This version has the following resource(s):
 
 ## Usage
 1. `git clone https://github.com/scottyschup/simple_rails_api.git`
+1. `cd simple_rails_api`
 1. `bundle install`
 1. `rake db:setup`
-1. `rails s` (This project defaults to port 8080. Use `rails s --port XXXX` to specify a custom port.)
+1. `rails s`
+
+This project defaults to port 8080. Use `rails s --port XXXX` to specify a custom port number.
 
 To test, use cURL (or your favorite REST client, e.g. Atom REST client, Chrome Postman, etc.) to send HTTP requests to `http://127.0.0.1:8080/:version/:resources[/:id]`.
 
@@ -64,6 +67,15 @@ returns '200 OK' with data:
 `curl -i -X POST -H "Content-Type: application/json" -d '{ "name": { "name":"Test Monkey" } }' http://127.0.0.1:8080/v1/names`
 
 returns `201 Created` with data:
+
+```json
+{"id":10,"name":"Test Monkey","created_at":"2015-10-19T22:31:28.233Z","updated_at":"2015-10-19T22:31:28.233Z"}
+```
+
+### DELETE
+`curl -iX DELETE http://127.0.0.1:8080/v1/names/10`
+
+returns `202 Accepted` with data:
 
 ```json
 {"id":10,"name":"Test Monkey","created_at":"2015-10-19T22:31:28.233Z","updated_at":"2015-10-19T22:31:28.233Z"}
