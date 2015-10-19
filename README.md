@@ -25,16 +25,23 @@ This version has the following resource(s):
       * returns an array of Name objects from the database
     * POST /v1/names (with parameters { name: STRING })
       * adds new name to database
+      * attempt to add a name that already exists results in a 409 response
     * DELETE /v1/names/:id
       * deletes name at id :id from the database
+      * omission of :id results in a 400 response
+      * request to delete a non-existant record results in a 404 response
 
 ## Usage
-Clone or fork this repo, setup MySQL database (rake db:setup), and use the builtin `rails s` to get it running on localhost. This project defaults to port 8080. Use `rails s --port XXXX` to specify a custom port.
+1. `git clone https://github.com/scottyschup/simple_rails_api.git`
+1. `bundle install`
+1. `rake db:setup`
+1. `rails s` (This project defaults to port 8080. Use `rails s --port XXXX` to specify a custom port.)
 
-To test, use your favorite REST client (Atom REST client, Chrome Postman, etc.) to send HTTP requests to http://127.0.0.1:8080/:version/:resources[/:id].
+To test, use cURL or your favorite REST client (Atom REST client, Chrome Postman, etc.) to send HTTP requests to http://127.0.0.1:8080/:version/:resources[/:id].
+E.g.: `curl -X POST -H "Content-Type: application/json" -d '{ "name": { "name":"Test Monkey" } }' http://127.0.0.1:8080/v1/names`
 
-### Example(s)
-`GET` request to  `http://127.0.0.1:8080/v1/names`
+## Example(s)
+`curl http://127.0.0.1:8080/v1/names`
 
 returns
 

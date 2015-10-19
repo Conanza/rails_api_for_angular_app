@@ -23,12 +23,14 @@ class V1::NamesController < ApplicationController
   end
 
   def destroy
-    @id = params[:id].to_i
-    render status: :bad_request if !@id
-    if Name.destroy(@id)
-      render json: @id, status: :success
+    id = params[:id].to_i
+    render status: :bad_request if !id
+    @name = Name.find(id)
+    if @name
+      @name.destroy(id)
+      render json: id, status: :success
     else
-      render status: :internal_server_error
+      render status: :not_found
     end
   end
 
