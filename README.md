@@ -1,7 +1,9 @@
 Simple Rails API for a sample Angular App
 =========================================
 
-This project has the following resources:
+This project is namespaced to provide multiple APIs as different versions. Currently there is only one setup:
+* v1
+This project has the following resource(s):
 
 * names
   * properties:
@@ -9,7 +11,9 @@ This project has the following resources:
     ```json
     {
       "id": INT,
-      "name": STRING
+      "name": STRING,
+      "created_at": TIMESTAMP,
+      "updated_at": TIMESTAMP
     }
     ```
 
