@@ -9,11 +9,11 @@
 Name.create([
   { name: "Scott" },
   { name: "Conan" },
-  { name: "Englebert Humperdinck" },
-  { name: "Benedict Cumberbatch" },
   { name: "Chris Kringle" },
-  { name: "Jesus H. Christ" },
+  { name: "Sterling Archer" },
+  { name: "Malcolm Reynolds" },
   { name: "Oswald Cobblepot" },
-  { name: "Albus Percival Wulfric Brian Dumbledore" },
-  { name: "Malcolm Reynolds" }
+  { name: "Benedict Cumberbatch" },
+  { name: "Englebert Humperdinck" },
+  { name: "Albus Percival Wulfric Brian Dumbledore" }
 ])
