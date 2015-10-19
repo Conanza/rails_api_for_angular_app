@@ -19,9 +19,12 @@ The project is namespaced in order to provide multiple APIs as different "versio
       }
       ```
     * actions:
-      * GET /names - returns an array of Name objects from the database
-      * POST /names (with parameters { name: STRING }) - adds new name to database
-      * DELETE /names/:id - deletes name at id :id from the database
+      * GET /names
+        returns an array of Name objects from the database
+      * POST /names (with parameters { name: STRING })
+        adds new name to database
+      * DELETE /names/:id
+        deletes name at id :id from the database
 
 ## Usage
 Clone or fork this repo, setup MySQL database (rake db:setup), and use the builtin `rails s` to get it running on localhost. This project defaults to port 8080. Use `rails s --port XXXX` to specify a custom port.
