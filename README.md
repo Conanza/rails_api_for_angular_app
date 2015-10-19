@@ -6,12 +6,12 @@ This project has the following resources:
 * names
   * properties:
 
-```json
-{
-  "id": INT,
-  "name": STRING
-}
-```
+    ```json
+    {
+      "id": INT,
+      "name": STRING
+    }
+    ```
 
   * actions:
     * GET /names - returns an array of Name objects from the database
