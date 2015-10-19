@@ -45,7 +45,9 @@ To test, use cURL (or your favorite REST client, e.g. Atom REST client, Chrome P
 ## Example(s)
 
 ### GET
-`curl http://127.0.0.1:8080/v1/names`
+```sh
+curl http://127.0.0.1:8080/v1/names
+```
 
 returns '200 OK' with data:
 
@@ -64,7 +66,9 @@ returns '200 OK' with data:
 ```
 
 ### POST
-`curl -i -X POST -H "Content-Type: application/json" -d '{ "name": { "name":"Test Monkey" } }' http://127.0.0.1:8080/v1/names`
+```sh
+curl -i -X POST -H "Content-Type: application/json" -d '{ "name": { "name":"Test Monkey" } }' http://127.0.0.1:8080/v1/names
+```
 
 returns `201 Created` with data:
 
@@ -73,7 +77,9 @@ returns `201 Created` with data:
 ```
 
 ### DELETE
-`curl -iX DELETE http://127.0.0.1:8080/v1/names/10`
+```sh
+curl -iX DELETE http://127.0.0.1:8080/v1/names/10
+```
 
 returns `202 Accepted` with data:
 
