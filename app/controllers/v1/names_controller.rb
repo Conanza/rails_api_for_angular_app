@@ -6,7 +6,7 @@ class V1::NamesController < ApplicationController
 
   def create
     name = name_params[:name]
-    if name
+    if name && name != ""
       if Name.find_by(name: name)
         render status: :conflict
       else
