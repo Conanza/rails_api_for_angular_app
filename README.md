@@ -8,10 +8,10 @@ This project is meant to provide a simple API with which to interact while learn
 The project is namespaced in order to provide multiple APIs as different "versions". Currently there is only one "version" setup: v1.
 
 ### v1: Names!
-
 This version has the following resource(s):
 * /v1/names
   * properties:
+
     ```json
     {
       "id": INT,
