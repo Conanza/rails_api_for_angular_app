@@ -7,13 +7,13 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Name.create([
-  { "name": "Scott" },
-  { "name": "Conan" },
-  { "name": "Englebert Humperdinck" },
-  { "name": "Benedict Cumberbatch" },
-  { "name": "Chris Kringle" },
-  { "name": "Jesus H. Christ" },
-  { "name": "Oswald Cobblepot" },
-  { "name": "Albus Percival Wulfric Brian Dumbledore" },
-  { "name": "Malcolm Reynolds" }
+  { name: "Scott" },
+  { name: "Conan" },
+  { name: "Englebert Humperdinck" },
+  { name: "Benedict Cumberbatch" },
+  { name: "Chris Kringle" },
+  { name: "Jesus H. Christ" },
+  { name: "Oswald Cobblepot" },
+  { name: "Albus Percival Wulfric Brian Dumbledore" },
+  { name: "Malcolm Reynolds" }
 ])
