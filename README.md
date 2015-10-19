@@ -1,11 +1,12 @@
-Simple Rails API for a sample Angular App
-=========================================
+Simple Rails API
+================
 
 ## Overview
+This project is meant to provide a simple API with which to interact while learning/developing decoupled frontend apps using JS frameworks such as Angular, Backbone, React, etc.
 
-This project is namespaced to provide multiple APIs as different versions. Currently there is only one "version" setup:
-* v1: This project has the following resource(s):
-
+## API "Versions"
+The project is namespaced in order to provide multiple APIs as different "versions". Currently there is only one "version" setup:
+* v1: This version has the following resource(s):
   * names
     * properties:
 
@@ -17,7 +18,6 @@ This project is namespaced to provide multiple APIs as different versions. Curre
         "updated_at": TIMESTAMP
       }
       ```
-
     * actions:
       * GET /names - returns an array of Name objects from the database
       * POST /names (with parameters { name: STRING }) - adds new name to database
