@@ -5,15 +5,13 @@ Simple Rails API
 This project is meant to provide a simple API with which to interact while learning/developing decoupled frontend apps using JS frameworks such as Angular, Backbone, React, etc.
 
 ## API "Versions"
-The project is namespaced in order to provide multiple APIs as different "versions". Currently there is only one "version" setup:
+The project is namespaced in order to provide multiple APIs as different "versions". Currently there is only one "version" setup: v1.
 
-### v1: Names! 
+### v1: Names!
 
 This version has the following resource(s):
-
-* names
+* /v1/names
   * properties:
-
     ```json
     {
       "id": INT,
@@ -23,11 +21,11 @@ This version has the following resource(s):
     }
     ```
   * actions:
-    * GET /names
+    * GET /v1/names
       * returns an array of Name objects from the database
-    * POST /names (with parameters { name: STRING })
+    * POST /v1/names (with parameters { name: STRING })
       * adds new name to database
-    * DELETE /names/:id
+    * DELETE /v1/names/:id
       * deletes name at id :id from the database
 
 ## Usage
