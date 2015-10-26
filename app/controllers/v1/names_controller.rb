@@ -36,6 +36,20 @@ class V1::NamesController < ApplicationController
     end
   end
 
+  def update
+    id = params[:id].to_i
+    render status: :bad_request if !id
+    if @name = Name.find_by(id: id)
+      if @name.update(name_params)
+        render json: @name, status: :success
+      else
+        render status: :internal_server_error
+      end
+    else
+      render status: :not_found
+    end
+  end
+
   private
 
   def name_params

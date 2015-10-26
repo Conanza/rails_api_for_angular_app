@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   match 'hello', to: 'static_pages#hello', via: 'get'
 
   namespace :v1, defaults: { format: :json } do
-    resources :names, only: [:index, :create, :destroy]
+    resources :names, only: [:index, :create, :update, :destroy]
   end
 end
