@@ -11,5 +11,12 @@ module AngularApp
       'Access-Control-Allow-Origin' => '*',
       'Access-Control-Request-Method' => '*'
     })
+
+    config.middleware.insert_before 0, "Rack::Cors", debug: true, logger: Rails.logger do
+      allow do
+        origins '*'
+        resource '*', headers: :any, methods: [:get, :post, :delete, :put, :options]
+      end
+    end
   end
 end
