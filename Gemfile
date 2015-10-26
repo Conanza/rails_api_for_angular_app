@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'mysql2', '~> 0.3.20' # needs be this version for some odd reason
+gem 'rack-cors', :require => 'rack/cors'
 gem 'rails', '4.2.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'uglifier', '>= 1.3.0'
