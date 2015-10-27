@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'faker'
 gem 'haml-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'mysql2', '~> 0.3.20' # needs be this version for some odd reason

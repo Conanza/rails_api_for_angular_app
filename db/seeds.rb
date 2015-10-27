@@ -17,3 +17,12 @@ Name.create([
   { name: "Englebert Humperdinck" },
   { name: "Albus Percival Wulfric Brian Dumbledore" }
 ])
+
+20.times do
+  name = ''
+  (rand(3) + 1).times do
+    name += "#{Faker::Name.first_name} "
+  end
+  name += Faker::Name.last_name
+  Name.create({ name: name });
+end
