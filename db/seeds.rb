@@ -7,18 +7,19 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Name.create([
-  { name: "Scott" },
-  { name: "Conan" },
-  { name: "Chris Kringle" },
-  { name: "Sterling Archer" },
-  { name: "Malcolm Reynolds" },
-  { name: "Oswald Cobblepot" },
-  { name: "Benedict Cumberbatch" },
-  { name: "Englebert Humperdinck" },
-  { name: "Albus Percival Wulfric Brian Dumbledore" },
-  { name: "Harry James Potter" },
-  { name: "Bruce Wayne" },
-  { name: "Clark Kent" }
+  { name: 'Scott' },
+  { name: 'Conan' },
+  { name: 'John Doe' },
+  { name: 'Clark Kent' },
+  { name: 'Bruce Wayne' },
+  { name: 'Chris Kringle' },
+  { name: 'Sufjan Stevens' },
+  { name: 'Sterling Archer' },
+  { name: 'Malcolm Reynolds' },
+  { name: 'Harry James Potter' },
+  { name: 'Benedict Cumberbatch' },
+  { name: 'Englebert Humperdinck' },
+  { name: 'Albus Percival Wulfric Brian Dumbledore' }
 ])
 
 20.times do
