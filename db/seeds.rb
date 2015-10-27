@@ -15,5 +15,8 @@ Name.create([
   { name: "Oswald Cobblepot" },
   { name: "Benedict Cumberbatch" },
   { name: "Englebert Humperdinck" },
-  { name: "Albus Percival Wulfric Brian Dumbledore" }
+  { name: "Albus Percival Wulfric Brian Dumbledore" },
+  { name: "Harry James Potter" },
+  { name: "Bruce Wayne" },
+  { name: "Clark Kent" }
 ])
