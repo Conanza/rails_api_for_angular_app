@@ -41,7 +41,7 @@ class V1::NamesController < ApplicationController
     render status: :bad_request if !id
     if @name = Name.find_by(id: id)
       if @name.update(name_params)
-        render json: @name, status: :success
+        render json: @name, status: :accepted
       else
         render status: :internal_server_error
       end
